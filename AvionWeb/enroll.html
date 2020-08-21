@@ -7,171 +7,143 @@
     <link rel="stylesheet" href="enroll.css"/>
 </head>
 <body>
-    <header id="header">
-        <div id="logo">
-          <img src="logo2.png" alt="Avion"/>
-        </div>
-    </header>
+    <header>
+        <a href="index.html#body" style="margin-right:auto;"><img class="logo" src="assets/logowtext.png" alt="logo"/></a>
+        <nav class="navlink" id="myNav">
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#process">Process</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
     
-    <form action="index.html" target="_blank" method="GET">
-    <div id="forenroll">
-        <div id="first">
-        <div class="enrollForms" id="textQ">
-            <label  class="contacts"> First Name </label></br>
-            <input type="text" name="first_name" id="first_name" class="form-input" required/>
-            </br>   
-            <label class="contacts"> Last Name </label></br>
-            <input type="text" name="last_name" id="last_name" class="form-input" required/>
-            </br>
-            <label class="contacts"> Mobile Number </label></br>
-            <input type="text" name="mobile" id="mobile" class="form-input" required/>       
-            </br>
-            <label class="contacts"> Email Address </label></br>
-            <input type="text" name="email" id="email" class="form-input" required/>       
-            </br>
-        </div>
-    </br>
-        <div class="enrollForms" id="Gender">
-            <label class="title">Gender</label>
-            <p></p>    
-                <select name="gender" id="mf">
+    <form action="index.html" target="_blank" method="GET" class="bodyForm">
+        <h1>Avion School Application Form</h1>
+        <div id="forenroll">
+            <div class="enrollForms" id="textQ">
+                <h2>Contact Information:</h2>
+                <label class="contacts" for="first_name"> First Name </label>
+                <input type="text" name="first_name" id="first_name" class="form-input" required/>  
+                <label class="contacts" for="last_name">Last Name </label>
+                <input type="text" name="last_name" id="last_name" class="form-input" required/>
+                <label class="contacts" for="mobile"> Mobile Number </label>
+                <input type="text" name="mobile" id="mobile" class="form-input" required/>       
+                <label class="contacts" for="email"> Email Address </label>
+                <input type="text" name="email" id="email" class="form-input" required/>
+            </div>
+            <div class="enrollForms" id="Gender">
+                <h2>Other Information:</h2>
+                <label class="title" for="gender">Gender</label>    
+                <select name="gender" id="gender">
                     <option value="male"> Male </option>
                     <option value="female"> Female </option>
                 </select>
-        </div>
-    </br>  
-        <div class="enrollForms" id="ageOld">
-            <label class="title"> Are you 18 years old and above? </label></br>
-            <p></p>    
-                <select name="age">
+            </div>
+            <div class="enrollForms" id="ageOld">
+                <label class="title" for="age"> Are you 18 years old and above? </label>   
+                <select name="age" id="age">
                     <option value="yes"> yes </option>
                     <option value="no"> no </option>
                 </select>
-        </div>
-    </br>
-        <div class="enrollForms" id="reside">
-            <label class="title"> Currently Residing in the Philippines? </label></br>
-            <p></p>   
-                <select name="reside">
-                    <option value="yes"> yes </option>
-                    <option value="no"> no </option>
-                </select>
-        </div>
-    </br>
-        <div class="enrollForms" id="attend">
-            <label class="title"> Will you able to attend for 95% or More of our
-                Live sessions in their entirety? </label>
-                <p>Avion School's full-time program runs weekdays from 10am to 6pm for around 12 weeks,
-                 depending on holiday schedules</p></br>
-                 <select name="attend">
-                    <option value="yes"> yes </option>
-                    <option value="no"> no </option>
-                 </select>
-        </div>
-    </br>
-        <div class="enrollForms" id="commitments">
-            <label class="title"> Do you have any commitments that will conflict 
-                with the live, mandatory course hours?</label>
-                <p>We're referring to standing commitments here: we know life happens! Avion School's 
-                    curriculum is built on attending live lectures, working with instructors and peers, 
-                    and pair-programming.</p>
-                </br>
+            </div>
+            <div class="enrollForms" id="reside">
+                <label class="title" for="reside"> Currently Residing in the Philippines? </label> 
                     <select name="reside">
                         <option value="yes"> yes </option>
                         <option value="no"> no </option>
-                     </select>
-        </div>
-        </div>
-    </br>
-    <div id="second">
-        <div class="enrollForms" id="payment">
-            <label class="title"> If accepted, which payment method will you be using? </label>
-            <p>Note: You'll receive detailed information later, and your selection is not binding now. 
-                An Income Share Agreement (ISA) is a tool to pay tuition. 
-                Please check out these FAQs explaining how School's ISA works.</p>
-            </br>
-                    <select name="reside">
+                    </select>
+            </div>
+            <div class="enrollForms">
+                <label class="title" for="attend"> Will you able to attend for 95% or More of our Live sessions in their entirety? </label>
+                <p>Avion School's full-time program runs weekdays from 10am to 6pm for around 12 weeks,
+                depending on holiday schedules</p>
+                <select name="attend" id="attend">
+                    <option value="yes"> yes </option>
+                    <option value="no"> no </option>
+                </select>
+            </div>
+            <div class="enrollForms">
+                <label class="title" for="commitments"> Do you have any commitments that will conflict with the live, mandatory course hours?</label>
+                <p>We're referring to standing commitments here: we know life happens! Avion School's 
+                    curriculum is built on attending live lectures, working with instructors and peers, 
+                    and pair-programming.</p>
+                    <select name="commitments" id="commitments">
+                        <option value="yes" selected> Yes </option>
+                        <option value="no"> No </option>
+                    </select>
+            </div> 
+            <div class="enrollForms">
+                <label class="title" for="payment"> If accepted, which payment method will you be using? </label>
+                <p>Note: You'll receive detailed information later, and your selection is not binding now. 
+                    An Income Share Agreement (ISA) is a tool to pay tuition. 
+                    Please check out these FAQs explaining how School's ISA works.</p>
+                    <select name="payment" id="payment">
+                        <option value="N/A" selected disabled>Choose your payment...</option>
                         <option value="incomeShare"> Income Share Agreement Option: PHP 0 Upfront + 2 years, 17% Income Share Agreement </option>
                         <option value="upfront">Upfront Payment: PHP80,000</option>
-                     </select>
-        </div>
-    </br>
-        <div class="enrollForms" id="experience">
-            <label class="title"> Which of the following best describe your programming experience? </label>
-            <p>This will not affect whether we accept you or not. 
-            We're just trying to understand the experience of those applying to our school.</p>
-                <div>
-                    
-                    <input type="checkbox" name="exp" class="form-input" value="noexp" required/>
-                    <label>No Experience, but I'm excited to start learning</label>
-                    </br>
-                    <input type="checkbox" name="exp" class="form-input" value="beginner" required/>
-                    <label>Beginning Learner: I've played with some introductory coding lessons and tutorials</label>
-                    </br>
-                    <input type="checkbox" name="exp" class="form-input" value="intermediate" required/>
-                    <label>Intermediate Learner: I have completed some coding classed or tutorials</label>
-                    </br>
-                    <input type="checkbox" name="exp" class="form-input" value="advance" required/>
-                    <label>Advance: I can create simple applications</label>
-                    </br>
-                    <input type="checkbox" name="exp" class="form-input" value="professional" required/>
-                    <label>Professional: I am an experienced software engineer and want to upgrade my skills</label>
-                    </br>
-               
+                    </select>
+            </div>        
+            <div class="enrollForms" id="experience">
+                <label class="title" for="exp"> Which of the following best describe your programming experience? </label>
+                <p>This will not affect whether we accept you or not. 
+                We're just trying to understand the experience of those applying to our school.</p>
+                <div>                       
+                    <input type="radio" id="exp" name="exp" class="form-input" value="noexp" required/>
+                    <label for="noexp">No Experience, but I'm excited to start learning</label>                        
+                    <input type="radio" id="exp" name="exp" class="form-input" value="beginner" required/>
+                    <label for="beginner">Beginning Learner: I've played with some introductory coding lessons and tutorials</label>                       
+                    <input type="radio" id="exp" name="exp" class="form-input" value="intermediate" required/>
+                    <label for="intermediate">Intermediate Learner: I have completed some coding classed or tutorials</label>                        
+                    <input type="radio" id="exp" name="exp" class="form-input" value="advance" required/>
+                    <label for="advance">Advance: I can create simple applications</label>                        
+                    <input type="radio" id="exp" name="exp" class="form-input" value="professional" required/>
+                    <label for="professional">Professional: I am an experienced software engineer and want to upgrade my skills</label>                       
                 </div>
-        </div>
-    </br>
-        <div class="enrollForms" id="refer">
-            <label class="title"> Who refered you/ How did you hear Avion School? </label>
-            <p></p>    
-            <div class=checkbox>
-                    <input type="checkbox" name="refer" class="form-input" value="friend" required/>
-                    <label>Friend</label>
-                    </br>
-                    <input type="checkbox" name="refer" class="form-input" value="ads" required/>
-                    <label>Ads</label>
-                    </br>
-                    <label>Others</label></br>
-                    <input type="text" name="refer" class="form-input" required/>
+            </div>
+            <div class="enrollForms">
+                <label class="title" for="refer"> Who refered you/ How did you hear Avion School? </label> 
+                <div class=checkbox>
+                    <input type="checkbox" id="friend" name="refer" class="form-input" value="friend" required/>
+                    <label for="friend">Friend/s</label>                    
+                    <input type="checkbox" id="ads" name="refer" class="form-input" value="ads" required/>
+                    <label for="ads">Ads</label>
+                    <input type="checkbox" id="family" name="refer" class="form-input" value="family" required/>
+                    <label for="family">Family</label>    
+                    <input type="checkbox" id="socmed" name="refer" class="form-input" value="socmed" required/>
+                    <label for="socmed">Social Media</label>
+                    <label for="others">Others:</label>
+                    <input type="text" id="others" name="refer" class="form-input" required placeholder="Please specify here..."/>
                 </div>
-        </div>
-    </br>
-        <div class="enrollForms" id="linkedin">
-            <label class="title"> Do you have LinkedIn Profile? </label>
-            <p></p>
-            <div class=checkbox>
-                    <input type="checkbox" name="linkedin" class="form-input" value="yes" required/>
-                    <label>Yes</label></br>
-                    <input type="text" name="linkedin" class="form-input" placeholder="please enter your username" required/></br>
-                    <input type="checkbox" name="linkedin" class="form-input" value="no"/>
-                    <label>No</label>
-                    
+            </div>
+            <div class="enrollForms">
+                <label class="title" for="linkedin"> Do you have LinkedIn Profile? </label>
+                <div class="radio">
+                    <input type="radio" id="yes" name="linkedin" class="form-input" value="yes" required/>
+                    <label for="yes">Yes</label>
+                    <input type="text" id="linkedin" name="linkedin" class="form-input" placeholder="If yes, please enter your username"/>
+                    <input type="radio" id="no" name="linkedin" class="form-input" value="no" required/>
+                    <label for="no">No</label>
                 </div>
+            </div>
+            <div class="enrollForms">
+                <label class="title" for="github"> If you have a Github username, enter it here! </label> 
+                <input type="text" id="github" name="github" class="form-input" placeholder="Please enter github username here..."/>
+            </div>
+            <div class="enrollForms">
+                <label class="title" for="attendance"> Avion School runs classes every four to eight weeks, How soon are you looking to start class? </label>
+                    <div>
+                        <select name="attendance" id="attendance">
+                            <option value="N/A" selected disabled>Choose your preferred attendance...</option>
+                            <option value="nextFourweeks">Within the next 4 weeks </option>
+                            <option value="nextThreemonths">Within the next three months</option>
+                            <option value="nextSixmonths">Within the next three to six months </option>
+                            <option value="notSure">I'm not sure</option>
+                        </select>
+                    </div>
+            </div>
         </div>
-    </br>
-        <div class="enrollForms" id="github">
-            <label class="title"> If you have a Github username, enter it here! </label>
-            <p></p>    
-            <div>
-                    <input type="text" name="github" class="form-input"/>
-                </div>
-        </div>
-    </br>
-        <div class="enrollForms" id="attendance">
-            <label class="title"> Avion School runs classes every four to eight weeks, How soon are you looking to start class? </label>
-                <div>
-                    <select name="reside">
-                        <option value="nextFourweeks">Within the next 4 weeks </option>
-                        <option value="nextThreemonths">Within the next three months</option>
-                        <option value="nextSixmonths">Within the next three to six months </option>
-                        <option value="notSure">I'm not sure</option>
-                     </select>
-                </div>
-        </div>
-    </br>
         <input type="submit" value="SUBMIT" class="form-input button" id="submit button"/>
-    </div>
-    </div>
     </form>
 </body>
 </html>
