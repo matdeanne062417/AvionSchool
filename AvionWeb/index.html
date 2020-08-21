@@ -10,14 +10,17 @@
 <body id="body">
   <header>
     <a href="#body" style="margin-right:auto;"><img class="logo" src="assets/logowtext.png" alt="logo"/></a>
-    <nav>
-      <ul class="navlink" >
+    <nav class="navlink" id="myNav">
+      <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#process">Process</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a class="enrollment" href="enroll.html"><button>Enroll Now</button></a></li>
       </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
-    <a class="enrollment" href="enroll.html"><button>Enroll Now</button></a>
   </header>
 
   <div class="content" id="landing">
@@ -121,4 +124,15 @@
       <span><i class="far fa-copyright"></i> Avion School 2020</span>
     </footer>
 </body>
+
+<script>
+  function myFunction() {
+  var x = document.getElementById("myNav");
+  if (x.className === "navlink") {
+    x.className += " responsive";
+  } else {
+    x.className = "navlink";
+  }
+}
+</script>
 </html>
