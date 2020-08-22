@@ -144,7 +144,7 @@ input:first-of-type{
 }
 
 select:first-of-type{
-    margin-top:
+    margin-top: 15px;
 }
 
 .bodyForm {
