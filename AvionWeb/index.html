@@ -1,125 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="sample.css" type="text/css" rel="stylesheet"/>
-  <title>Document</title>
+  <link href="index.css" type="text/css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <title>AvionSchool</title>
 </head>
-<body>
-  <header id="header">
-    <div id="logo">
-      <img src="" alt=""/>
-    </div>
-    <nav id="navigation">
-      <a class="navlink" href="">About</a>
-      <a class="navlink" href="">Process</a>
-      <a class="navlink" href="">Contact</a>
-      <a class="navlink" href="">Enroll</a>
+  
+<body id="body">
+  <header>
+    <a href="#body" style="margin-right:auto;"><img class="logo" src="assets/logowtext.png" alt="logo"/></a>
+    <nav class="navlink" id="myNav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="enrollment" href="enroll.html"><button>Enroll Now</button></a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
   </header>
-  <div class="content" id="contentOne">
-    <h1>Become a software engineer in 12 weeks</h1>
-    <h6>pay only when you get hire</h6>
-    <p>Learn the fundamentals of writing code and the 
-      skills of the best software engineers. 
-      We teach you how to build software, 
-      work with teams and apply for top software jobs.</p>
-     <a class="enroll" href="" target="_blank"></a> 
+
+  <div class="content" id="landing">
+    <div class="description">
+      <h1>Become a <br>Software Engineer in <br><strong style="text-decoration: underline;">12 Weeks</strong></h1>
+      <h2>Pay only when you get hired</h2>
+      <p>Learn everything you need to know to become one of the top software engineers in the country. We teach you how to build software, work with teams,
+         and apply for top software jobs.
+      </p>
+       <a class="enroll" href="enroll.html"><button>Enroll Now <i class="fas fa-arrow-right"></i></button></a>
+    </div>
+    <img src="assets/main.png">
   </div>
 
-  <div class="content" id="contentTwo">
-    <h2>How the course works</h2>
-    <p>We train you the best practices in software development and provide 
-      you with the relevant classes to prepare you for real world needs. 
-      Classes are taught by industry experts and is structured 
-      to ensure you learn what is required to become a successful software engineer.</p>
+  <div class="content" id="about">
+    <div>
+      <h1>How The Course Works</h1>
+    </div>
+    <img src="assets/course.png"/>
     <ul id="courses">
       <li>Programming Fundamentals</li>
-      <li>Web Foundation</li>
+      <li>Web <br>Foundation</li>
       <li>Web Application Development</li>
       <li>Frontend Development</li>
       <li>Backend Development</li>
-      <li>Career Transitioning</li>
+      <li>Career <br>Transitioning</li>
     </ul>
+    <div class="description">
+      <h2>We train you the best practices in software development and provide 
+        you with the relevant classes to prepare you for real world needs. 
+        Classes are taught by industry experts and is structured 
+        to ensure you learn what is required to become a successful software engineer.</h2>
+    </div>
   </div>
   
-  <div class="content" id="contentThree">
+  <div class="content" id="francis">
+    <img src="assets/francis.png">
     <p class="quotation"><q>
       Investing in unparalleled software talents is at the heart of building a great tech ecosystem
-    </q></p>
-    <p>-Francis Plaza, CEO of PayMongo</p>
+    </q><br> - <strong>Francis Plaza</strong>, CEO of PayMongo</p>
   </div>
 
-  <div class="content" id="contentFour">
-    <div class="Admission">
-      <i></i>
-      <h3>Admission</h3>
-      <p>We took the time to make admissions easy: 
-        an online application, 
-        a 1:1 video interview, 
-        a tech challenge and you’re done.
-      </p>
+  <div class="content" id="process">
+    <h1>Process</h1>
+    <div class="processes">
+      <div class="Admission">
+        <i class="fas fa-paste fa-5x"></i>
+        <h2>Admission</h2>
+        <p>We took the time to make admissions easy: 
+          an online application, 
+          a 1:1 video interview, 
+          a tech challenge and you’re done.
+        </p>
+      </div>
+      <div class="Bootcamp">
+        <i class="fas fa-brain fa-5x"></i>
+        <h2>Bootcamp</h2>
+        <p>Our course is structured with real world problems in mind. 
+          You learn only what’s needed 
+          and get taught by top-notch software engineers
+        </p>
+      </div>
+      <div class="Career">
+        <i class="fas fa-briefcase fa-5x"></i>
+        <h2>Career</h2>
+        <p>Tech startups are always on the lookout for engineers 
+          which is why we’ve partnered with all the best startups to make finding a job easy.
+        </p>
+      </div>
     </div>
-    <div class="Bootcamp">
-      <i></i>
-      <h3>Bootcamp</h3>
-      <p>Our course is structured with real world problems in mind. 
-        You learn only what’s needed 
-        and get taught by top-notch software engineers
-      </p>
-    </div>
-    <div class="Career">
-      <i></i>
-      <h3>Career</h3>
-      <p>Tech startups are always on the lookout for engineers 
-        which is why we’ve partnered with all the best startups to make finding a job easy.
-      </p>
-    </div>
+  </div>
     
-    <div class="content" id="contentFive">
-      <div id="Contact">
-        <h1>Contact Us</h1>
-        <p>Whether you have questions or you would just like to say hello, drop us a note.</p>
-
+    <div class="content" id="contact">
+      <h1>Contact Us</h1>
+      <p>Whether you have questions or you would just like to say hello, drop us a note.</p>
+      <div class="information">
         <div class="Call">
-          <i></i>
-          <h3>Call Us</h3>
+          <i class="fas fa-phone fa-3x"></i>
+          <h2>Call Us</h2>
           <p>+63 (917) 317-3012</p>
         </div>
         <div class="Email">
-          <i></i>
-          <h3>Email</h3>
+          <i class="fas fa-envelope-open-text fa-3x"></i>
+          <h2>Email</h2>
           <p>hello@avionschool.com</p>
         </div>
         <div class="Location">
-          <i></i>
-          <h3>Location</h3>
+          <i class="fas fa-map-pin fa-3x"></i>
+          <h2>Location</h2>
           <p>Bonifacio Global City, Taguig</p>
         </div>
-
        </div> 
     </div>
 
-    <div class="content" id="contentSix">
-      <p>Ready to learn?</p>
-      <a class="enroll" href="" target="_blank"></a> 
+    <div class="content" id="ready">
+      <h1>Ready to learn?</h1>
+      <a class="enroll" href="enroll.html"><button>Enroll Now <i class="fas fa-arrow-right"></i></button></a>
     </div>
 
     <footer>
-      <span>Avion School 2020</span>
+      <span><i class="far fa-copyright"></i> Avion School 2020</span>
     </footer>
 </body>
 </html>
-=======
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AvionSchool</title>
-    <link rel="stylesheet" href="avion.css"/>
-</head>
-<body>
-    
-</body>
+
+<script>
+  function myFunction() {
+  var x = document.getElementById("myNav");
+  if (x.className === "navlink") {
+    x.className += " responsive";
+  } else {
+    x.className = "navlink";
+  }
+}
+</script>
 </html>
->>>>>>> c9ff3c0e0f1ed2428c063a178566358518aae9f5
