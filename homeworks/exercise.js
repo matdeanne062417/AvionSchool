@@ -101,18 +101,3 @@ compare(victor, john);
 
 
 
-// const bills = {
-//     value: [1240, 480, 2680, 1800, 420],
-//     tips: function(){
-//         if (this.value <= 500){
-//             return this.value * 0.2;
-//         }else if (this.value > 500 && this.value <=2000){
-//             return this.value * 0.15;
-//         }else if (this.value > 2000){
-//             return this.value * 0.10;
-//         }
-//     }
-
-// }
-
-// console.log(bills.tips());
