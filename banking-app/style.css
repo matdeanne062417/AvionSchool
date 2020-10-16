@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.create-user, .deposit-money, .withdraw-money{
+    display: none;
+}
+
+.bank-name, .bank-transaction{
+    text-align: center;
+}
+.bank-display{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    height: 50px;
+}
+.bank-name{
+    padding: 1%;
+    border-bottom: 5px solid black;
+}
+.bank-transaction{
+    padding: 1%;
+    background-color: blue;
+    color: white;
+    width: 50%;
+    margin:auto;
+}
+
+.create-user, .deposit-money, .withdraw-money{
+    text-align: inherit;
+}
+
+.create-user{
+    padding: 1%;
+}
+
+input{
+    margin: auto;
+    display: block;
+}
+
+.user-list{
+    margin: 30px auto;
+    width: 1000px;
+    text-align: center;
+}
